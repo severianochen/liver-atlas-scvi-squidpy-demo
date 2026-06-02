@@ -1,0 +1,34 @@
+name: base
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - pip
+
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - scikit-image
+  - matplotlib
+  - seaborn
+  - h5py
+  - pytables
+  - anndata
+
+  - scanpy=1.10.*
+  - squidpy=1.8.*
+  - python-igraph
+  - leidenalg
+
+  - jupyterlab
+  - ipykernel
+  - pyyaml
+  - typer
+  - rich
+  - tqdm
+
+  - wget
+  - curl
+  - unzip

@@ -1,0 +1,4 @@
+scvi-tools
+mudata
+cellxgene-census
+cellpose
