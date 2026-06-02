@@ -1,0 +1,36 @@
+project_name: liver-atlas-scvi-squidpy-demo
+random_seed: 42
+
+paths:
+  raw_dir: data/raw
+  interim_dir: data/interim
+  processed_dir: data/processed
+  figures_dir: figures
+  models_dir: models
+  reports_dir: reports
+
+single_cell:
+  min_genes: 200
+  max_genes: 8000
+  max_pct_mito: 25
+  min_cells_per_gene: 3
+  target_sum: 10000
+  n_top_genes: 3000
+  n_pcs: 30
+  n_neighbors: 15
+  leiden_resolution: 0.6
+
+scvi:
+  batch_key_candidates: [donor, sample, sample_id, orig.ident, dataset]
+  max_epochs: 100
+  n_latent: 20
+  n_layers: 2
+  gene_likelihood: nb
+
+spatial:
+  n_top_genes: 2000
+  n_pcs: 30
+  n_neighbors: 15
+  leiden_resolution: 0.6
+  moran_n_genes: 1000
+  n_perms: 100
