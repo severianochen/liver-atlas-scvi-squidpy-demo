@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+
+# Never commit raw or processed large data
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Models/logs
+models/*
+logs/*
+!logs/.gitkeep
+
+# Large files
+*.h5ad
+*.h5
+*.loom
+*.rds
+*.RData
+*.zip
+*.tar.gz
+*.fastq
+*.fastq.gz
+*.bam
+*.cram
+
+# Editor/OS
+.DS_Store
+.vscode/
+.idea/
