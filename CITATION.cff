@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Liver Atlas scVI Squidpy Demo"
+message: "If you use this demo structure, please cite it as below."
+authors:
+  - family-names: "Chen"
+    given-names: "Seve"
+version: 0.1.0
+date-released: 2026-06-02
