@@ -48,7 +48,7 @@ make spatial
 ```
 
 For the processed HCC holdout, first prepare:
-
+Note: the GSE156625 holdout file is not downloaded by `make download`; it must be downloaded separately as described in the tutorial or placed manually at `data/raw/GSE156625/GSE156625_HCCscanpyobj.h5ad.gz`.
 ```bash
 mkdir -p data/raw/holdout
 gunzip -c data/raw/GSE156625/GSE156625_HCCscanpyobj.h5ad.gz > data/raw/holdout/holdout_liver.h5ad
@@ -63,7 +63,7 @@ make holdout
 For Squidpy installation/code-path checks only:
 
 ```bash
-make spatial-smoketesttest
+make spatial-smoketest
 ```
 
 The smoke test proves the Squidpy code path but is not used for liver biological interpretation.
